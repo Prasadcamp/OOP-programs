@@ -1,9 +1,9 @@
 #include<graphics.h>
-#include<iostream.h>
+#include<iostream>
 #include<stdlib.h>
 #include<math.h>
 #include<dos.h>
-//using namespace std;
+using namespace std;
 class polygon
     {
 	public:
@@ -97,7 +97,7 @@ int main()
 	int gd,gm;
 	int new_color,x,y,ch;
 	gd=DETECT;
-	initgraph(&gd,&gm,"c:\\tc\\bgi");
+	initgraph(&gd,&gm,NULL);
 	polygon p;
 	p.scanline();
 	closegraph();
