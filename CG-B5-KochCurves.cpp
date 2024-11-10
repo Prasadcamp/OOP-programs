@@ -1,8 +1,8 @@
-#include<iostream.h>
+#include<iostream>
 #include<graphics.h>
 #include<math.h>
 #include<dos.h>
-//using namespace std;
+using namespace std;
 class kochcurve
     {
     public:
@@ -40,12 +40,12 @@ int main()
 	cout<<"Enter the number of iterations : ";
 	cin>>i;
 	int gd=DETECT,gm;
-	initgraph(&gd,&gm,"c:\\tc\\bgi");
+	initgraph(&gd,&gm,NULL);
 	k.koch(i,200,125,100,300);
 	k.koch(i,300,300,200,125);
 	k.koch(i,100,300,300,300);
 	delay(2500);
-	//getch();
+	getch();
 	closegraph();
 	return 0;
 	}  
